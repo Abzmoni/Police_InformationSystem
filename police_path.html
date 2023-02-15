@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUERY PIS</title>
+    <link rel="stylesheet" href="dp.css">
+</head>
+
+<body>
+    <h1 class="head"> POLICE INFORMATION SYSTEM </h1><br>
+    <h3> CRIMINAL DATABASE</h3>
+
+    <nav>
+        <div>
+            <a class="hp" href="#qcriminal">Criminals</a><br><br>
+        </div>
+
+        <div>
+            <a class="hp" href="#qcase">Cases</a><br><br>
+        </div>
+
+        <div>
+            <a class="hp" href="#qcrime">Crimes</a><br><br>
+        </div>
+
+        <div>
+            <a class="hp" href="#qdept">Departments</a><br><br>
+        </div>
+
+        <div>
+            <a class="hp" href="#qofficer">Officers</a><br><br>
+        </div>
+    </nav>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div>
+        <h2> Criminal Record</h2>
+        <label>Criminal Name</label>
+        <input type="text" class="joshc" name="Criminal_name">
+        <button onclick="getCriminal()">Submit</button>
+        <div class="josh table">
+            <h2 class="data1 data"></h2>
+            <h2 class="data2 data"></h2>
+            <h2 class="data3 data"></h2>
+            <h2 class="data4 data"></h2>
+            <h2 class="data5 data"></h2>
+            <h2 class="data6 data"></h2>
+            <h2 class="data7 data"></h2>
+            <h2 class="data8 data"></h2>
+            <h2 class="data9 data"></h2>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div>
+        <h2>Query Crime Records</h2>
+        <label>Crime ID</label>
+        <input type="text" class="joshc" name="crime_id">
+        <button onclick="getCrime()">Submit</button>
+        <div class="josh table">
+            <h2 class="data9 data"></h2>
+            <h2 class="data10 data"></h2>
+            <h2 class="data11 data"></h2>
+            <h2 class="data1 data"></h2>
+          
+  
+        </div>
+    </div>
+
+    
+    <form id="qcriminal" name="form1" action="/criminal"method="get" >
+    <!-- <div class="modal" id="modal"> -->
+        <!-- <div class="modalcontainer"> -->
+                <fieldset>
+                    <legend> Query Criminal Record</legend>
+                    <label> Criminal Name</label><br>
+                    <input type="text" name="Criminal_name">
+                    <br><br>
+
+            
+            <br><br>
+
+                    <!-- <div class="modalbutton"><button class="closebtn"> Close </button></div> -->
+                </fieldset>
+
+                <!-- <div>
+                    <button onsubmit="return form(e)" class="submit" type="submit" value="submit"> SUBMIT </button>
+                    <button class="reset" type="reset" name="reset" value="reset"> RESET </button>
+                    <a class="homepg" href="home page dp.html">....Back to Home Page</a>
+                </div> -->
+                <!-- <div></div> -->
+            </form>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <form id="qcase">
+            <!-- <div class="modal" id="modal"> -->
+                <!-- <div class="modalcontainer"> -->
+                <fieldset>
+                    <legend> Query Case Record</legend>
+                    <label> Case ID</label><br>
+                    <input type="text" name="Case_id">
+                    <br><br>
+                    <label>Case Name</label><br>
+                    <input type="text" name="Case_name">
+                    <!-- <div class="modalbutton"><button class="closebtn"> Close </button></div> -->
+                </fieldset>
+            <!-- </div></div> -->
+            </form>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <form id="qcrime">
+                <!-- <div class="modal" id="modal"> -->
+                    <!-- <div class="modalcontainer"> -->
+                <fieldset>
+                    <legend> Query Crime Record</legend>
+                    <label> Crime ID</label><br>
+                    <input type="text" name="Crime_id">
+                    <br><br>
+                    <label> Criminal ID</label><br>
+                    <input type="text" name="Criminal_id">
+                    <!-- <div class="modalbutton"><button class="closebtn"> Close </button></div> -->
+                </fieldset>
+                <!-- </div></div> -->
+            </form>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <form name = "form1" id="qdept" action="/department" method="get">
+                <!-- <div class="modal" id="modal"> -->
+                    <!-- <div class="modalcontainer"> -->
+                <fieldset>
+                    <legend> Query Department Record</legend>
+                    <label>Department Name</label><br>
+                    <input type="text" name="Department_name">
+                    <!-- <div class="modalbutton"><button class="closebtn"> Close </button></div> -->
+                </fieldset>
+                <button class="submit" type="submit" name="submit" value="submit"> SUBMIT </button>
+            <!-- </div></div> -->
+            </form>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <form id="qofficer">
+                <!-- <div class="modal" id="modal"> -->
+                    <!-- <div class="modalcontainer"> -->
+                <fieldset>
+                    <legend> Query Officer Record</legend>
+                    <label> Officer ID</label><br>
+                    <input type="text" name="Police_id">
+                    <br><br>
+                    <label>Officer Name</label><br>
+                    <input size="40" type="text" name="Police_name" placeholder="SURNAME FIRSTNAME OTHERNAMES">
+                    <!-- <div class="modalbutton"><button class="closebtn"> Close </button></div> -->
+                </fieldset>
+                <!-- </div></div> -->
+            </form>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+            <script src="script.js"></script>
+</body>
+
+</html>

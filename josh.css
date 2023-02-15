@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+.josh-banner {
+    width: 5%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.table-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  li {
+    border-right: 1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+
+
+
+.table {
+    padding-top: 2rem;
+    margin-left: -15rem;
+    display: flex;
+    align-items: center;    
+}
+
+div input {
+    margin-left: 1rem;
+    margin-right: 0.8rem;
+}
+
+.josh-card-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.josh-card {
+    height: 25rem;
+    width: 45rem;
+    background-color: #3a336f;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.josh-card p {
+    color: white;
+    font-size: 1.65rem;
+}
+

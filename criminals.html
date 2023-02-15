@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>cRIMINALS</title>
+</head>
+<body>
+    <div>
+        <div class="card p-3 mb-3 bg-white rounded  form-control-lg card-body d-flex flex-row" style={{ boxShadow: "0 0 15px 0 lightblue" }}>
+				<span style={{ fontWeight: "bold" }}>CRIMINAL DATABASE</span>
+			</div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="card pad" style={{ boxShadow: "0 0 15px 0 lightblue" }}>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group mb-3" style={{ padding: "15px" }}>
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Search by title"
+                                
+                            />
+                            <div class="input-group-append">
+                                <button
+                                    class="btn btn-outline-secondary"
+                                    type="button"
+                                    onClick={findByTitle}
+                                >
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class='table-responsive'>
+                            <table class="table table-striped bg-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">FIRST NAME</th>
+                                        <th scope="col">LASTNAME</th>
+                                        <th scope="col">EMAIL</th>
+                                        <th scope="col">ADDRESS</th>
+                                        <th scope="col">CITY</th>
+                                        <th scope="col">STATE</th>
+                                        <th scope="col">MOBILE NO</th>
+																				<th scope="col">crime id</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

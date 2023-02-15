@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NEW CASE RECORD PAGE FOR PIS </title>
+    <link rel="stylesheet" href="dp.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="head"> POLICE INFORMATION SYSTEM </h1><br>
+        <h3> NEW CASE RECORD</h3>
+    </div>
+
+    <form name="form1" action="/cases" method="post">
+        <div class='div1'>
+            <legend>CASE DETAILS </legend>
+            <fieldset>
+                <label> Case ID</label><br>
+                <input type="text" name="Case_id">
+                <br><br>
+
+                <label>Case Type</label><br>
+                <input type="text" name="Case_type">
+                <br><br>
+
+                <label>Date Issued</label><br>
+                <input type="date" name="Date_issued">
+                <br><br>
+
+                <label> Crime ID</label><br>
+                <input type="text" name="Crime_id">
+                <br><br>
+                
+                <label> Criminal ID</label><br>
+                <input type="text" name="Criminal_id">
+                <br><br>
+
+                <label>Dept ID</label><br>
+                <input type="text" name="Dept_id">
+                <br><br>
+            </fieldset>
+            <br><br>
+
+            <div>
+                <button class="submit" type="submit" name="submit" value="submit"> SUBMIT </button>
+                <button class="reset" type="reset" name="reset" value="reset"> RESET </button>
+            </div>
+            <a class="homepg" href="home page dp.html">....Back to Home Page</a>
+    </form>
+</body>
+
+</html>
+
+<!-- <shift alt f to arrange code, ctrl / to comment -->
